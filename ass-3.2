@@ -1,0 +1,29 @@
+
+// defining interface Drivable
+interface Drivable {
+  start(): void;
+  drive(): void;
+  getPosition(): void;
+
+}
+//defining class Car which is implementing interface Drivable
+class Car implements Drivable {
+
+  start = function () {
+    console.log("Put key to start the car");
+  };
+
+  drive = function () {
+    console.log("Apply accelarator to drive the car");
+  };
+
+  getPosition = function () {
+    console.log("To get current position use GPRS");
+  };
+
+}
+// invoking the below function for printing the rquired values in the console
+let carDetail : Car = new Car();
+carDetail.start();
+carDetail.drive();
+carDetail.getPosition();
